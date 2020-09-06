@@ -1,0 +1,94 @@
+﻿<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+    <section>
+        <question href="#">
+            How well are you able to identify your groups of customers?
+        </question>
+        <div style="top: 35%; left: 20%; position: absolute;" id="customerno">
+            <div class="card" style="left: 15%;" onclick="chooseCustomerNo()">
+                <div class="card-image" style="background: url('forecast.jpg'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>Don't Know</h2>
+                    <p>I am unable to identify groups of customers.</p>
+                </div>
+                <div class="card-stats" style="background: rgb(255, 7, 110);">
+                    <div class="stat">
+                        <div class="value">8321</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">5123</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">95%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="top: 35%; left: 40%; position: absolute;" id="customersomewhat">
+            <div class="card" style="left: 15%;" onclick="chooseCustomerSomewhat()">
+                <div class="card-image" style="background: url('customer.png'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>Somewhat</h2>
+                    <p>I can identify the number of groups of customers i have, but may lack details.</p>
+                </div>
+                <div class="card-stats" style=" background: #23D5AB">
+                    <div class="stat">
+                        <div class="value">542</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">154</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">89%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="top: 35%; left: 60%; position: absolute;" id="customeryes">
+            <div class="card" style="left: 15%;" onclick="chooseCustomerYes()">
+                <div class="card-image" style="background: url('product.png'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>Know</h2>
+                    <p>I am able to customer groups, with details such as total amount, frequency and recency of each group.</p>
+                </div>
+                <div class="card-stats" style=" background: #EE7752;">
+                    <div class="stat">
+                        <div class="value">542</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">154</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">89%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script type="text/javascript">
+    function chooseCustomerNo() {
+        window.location.href = "customerno.html";
+    }
+    function chooseCustomerSomewhat() {
+        window.location.href = "customersomewhat.html";
+    }
+    function chooseCustomerYes() {
+        window.location.href = "customeryes.html";
+    }
+</script>

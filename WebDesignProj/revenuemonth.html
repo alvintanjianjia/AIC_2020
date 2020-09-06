@@ -1,0 +1,84 @@
+﻿<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+    <section>
+        <question href="#">
+            Please indicate which days of the week you earn a higher revenue and which days you earn a lower revenue.
+        </question>
+        <div style="top: 37%; left: 22%; position: absolute;">
+            <p class="toggle-text">January</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 42%; left: 22%; position: absolute;">
+            <p class="toggle-text">February</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 47%; left: 22%; position: absolute;">
+            <p class="toggle-text">March</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 52%; left: 22%; position: absolute;">
+            <p class="toggle-text">April</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 57%; left: 22%; position: absolute;">
+            <p class="toggle-text">May</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 62%; left: 22%; position: absolute;">
+            <p class="toggle-text">June</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 37%; left: 42%; position: absolute;">
+            <p class="toggle-text">July</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 42%; left: 42%; position: absolute;">
+            <p class="toggle-text">August</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 47%; left: 42%; position: absolute;">
+            <p class="toggle-text">September</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 52%; left: 42%; position: absolute;">
+            <p class="toggle-text">October</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 57%; left: 42%; position: absolute;">
+            <p class="toggle-text">November</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 62%; left: 42%; position: absolute;">
+            <p class="toggle-text">December</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 72%; left: 30%; position: absolute;">
+            <p class="toggle-text">Upload CSV</p>
+            <input type="file" name="" id="file" hidden />
+            <label for="file" id="selector">Select file</label>
+        </div>
+        <div style="top: 84%; left: 47%; position: absolute;">
+            <confirm-button onclick="confirm()">Confirm</confirm-button>
+        </div>
+    </section>
+</body>
+
+<script src="file.js"></script>
+<script type="text/javascript">
+    const toggles = document.querySelectorAll('.toggle-switch');
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            e.currentTarget.classList.toggle('active');
+        })
+    })
+
+    function confirm() {
+        window.location.href = "result.html";
+    }
+</script>

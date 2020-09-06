@@ -1,0 +1,28 @@
+<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+    <section>
+        <question href="#">
+            Please upload your csv file.
+        </question>
+        <div style="top: 72%; left: 30%; position: absolute;">
+            <p class="toggle-text">Upload CSV</p>
+            <input type="file" name="" id="file" hidden />
+            <label for="file" id="selector">Select file</label>
+        </div>
+        <div style="top: 84%; left: 47%; position: absolute;">
+            <confirm-button onclick="confirm()">Confirm</confirm-button>
+        </div>
+    </section>
+</body>
+
+<script src="file.js"></script>
+<script type="text/javascript">
+    function confirm() {
+        window.location.href = "result.html";
+    }
+</script>
