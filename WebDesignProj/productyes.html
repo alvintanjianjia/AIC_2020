@@ -1,0 +1,35 @@
+﻿<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+    <section>
+        <question href="#">
+            How many groups of products do you have?
+        </question>
+        <div style="top: 65%; left: 30%; position: absolute;">
+            <p class="toggle-text">No. of groups</p>
+            <div class="slider" style="left: 428px">
+                <input type="range" min="1" max="50" value="25" oninput="rangeValue.innerText = this.value">
+                <p id="rangeValue">25</p>
+            </div>
+        </div>
+        <div style="top: 72%; left: 30%; position: absolute;">
+            <p class="toggle-text">Upload CSV</p>
+            <input type="file" name="" id="file" hidden />
+            <label for="file" id="selector">Select file</label>
+        </div>
+        <div style="top: 84%; left: 47%; position: absolute;">
+            <confirm-button onclick="confirm()">Confirm</confirm-button>
+        </div>
+    </section>
+</body>
+
+<script src="file.js"></script>
+<script type="text/javascript">
+    function confirm() {
+        window.location.href = "result.html";
+    }
+</script>
