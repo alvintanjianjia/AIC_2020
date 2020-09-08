@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <section>
+        <div class="center" style="width: 100%;">
+            <welcome href="#">
+                Welcome, please upload your csv file.
+            </welcome>
+        </div>
+        <div class="center">
+            <confirm-button onclick="confirm()">Confirm</confirm-button>
+        </div>
+        <div class="center">
+            <input type="file" name="" id="file" hidden />
+            <label for="file" id="selector">Select file</label>
+        </div>
+    </section>
+</body>
+<script src="file.js"></script>
+<script type="text/javascript">
+    function confirm() {
+        window.location.href = "quiz.html";
+    }
+</script>

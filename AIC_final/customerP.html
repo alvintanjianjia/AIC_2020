@@ -1,0 +1,83 @@
+﻿<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+    <link rel="stylesheet" href="result.css" />
+</head>
+<body>
+    <section>
+        <result-text> Results </result-text>
+        <div class="center" style="background: url('customerP.jpeg'); background-size: cover; width: 40%; height: 42%; transform: translate(-100%, -50%)"></div>
+        <div class="center" style="width: 40%; height: 40%; transform: translate(10%, -50%);">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Current amt</th>
+                        <th>Predicted amt</th>
+                        <th>Unrealised amt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C1</td>
+                        <td>1093.66</td>
+                        <td>10880.20</td>
+                        <td>9786.54</td>
+                    </tr>
+                    <tr>
+                        <td>C2</td>
+                        <td>893.71</td>
+                        <td>4923.47</td>
+                        <td>4029.76</td>
+                    </tr>
+                    <tr>
+                        <td>C3</td>
+                        <td>677.72</td>
+                        <td>4810.14</td>
+                        <td>4132.41</td>
+                    </tr>
+                    <tr>
+                        <td>C4</td>
+                        <td>706.65</td>
+                        <td>3246.28</td>
+                        <td>2539.63</td>
+                    </tr>
+                    <tr>
+                        <td>C5</td>
+                        <td>364.45</td>
+                        <td>3130.93</td>
+                        <td>2766.47</td>
+                    </tr>
+                    <tr>
+                        <td>C6</td>
+                        <td>702.47</td>
+                        <td>3002.95</td>
+                        <td>2300.48</td>
+                    </tr>
+                    <tr>
+                        <td>C7</td>
+                        <td>298.36</td>
+                        <td>2603.68</td>
+                        <td>2305.31</td>
+                    </tr>
+                    <tr>
+                        <td>C8</td>
+                        <td>135.89</td>
+                        <td>955.24</td>
+                        <td>819.35</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="top: 84%; left: 50%; position: absolute;">
+            <back-button onclick="back()">Generate Report</back-button>
+        </div>
+    </section>
+</body>
+<script>
+    function back() {
+        window.location.href = "quiz.html";
+    }
+</script>

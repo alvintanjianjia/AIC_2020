@@ -1,0 +1,59 @@
+﻿<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+    <section>
+        <question href="#">
+            Please indicate which days of the week you earn a higher revenue and which days you earn a lower revenue.
+        </question>
+        <div style="top: 37%; left: 30%; position: absolute;">
+            <p class="toggle-text">Monday</p>
+                <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 42%; left: 30%; position: absolute;">
+            <p class="toggle-text">Tuesday</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 47%; left: 30%; position: absolute;">
+            <p class="toggle-text">Wednesday</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 52%; left: 30%; position: absolute;">
+            <p class="toggle-text">Thursday</p>
+                <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 57%; left: 30%; position: absolute;">
+            <p class="toggle-text">Friday</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 62%; left: 30%; position: absolute;">
+            <p class="toggle-text">Saturday</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div style="top: 67%; left: 30%; position: absolute;">
+            <p class="toggle-text">Sunday</p>
+            <div class="toggle-switch three"></div>
+        </div>
+        <div class="center" style="transform: translate(-50%, 300%)">
+            <confirm-button onclick="confirm()">Confirm</confirm-button>
+        </div>
+    </section>
+</body>
+
+<script src="file.js"></script>
+<script type="text/javascript">
+    const toggles = document.querySelectorAll('.toggle-switch');
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            e.currentTarget.classList.toggle('active');
+        })
+    })
+
+    function confirm() {
+        window.location.href = "revenueDayResult.html";
+    }
+</script>

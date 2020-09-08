@@ -4,9 +4,9 @@ threadsafe: true
 
 handlers:
 - url: /
-  static_files: WebDesignProj/index.html
-  upload: WebDesignProj/index.html
+  static_files: AIC_final/index.html
+  upload: AIC_final/index.html
 
 - url: /(.*)
-  static_files: WebDesignProj/\1
-  upload: WebDesignProj/(.*)
+  static_files: AIC_final/\1
+  upload: AIC_final/(.*)

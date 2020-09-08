@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Low%20Cheng%20Yi/Desktop/WebDesignProj/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>AIC</title>
+    <link rel="stylesheet" href="./AIC_files/styles.css">
+    <link rel="stylesheet" href="./AIC_files/quiz.css">
+</head>
+<body>
+    <section>
+        <question href="#" style="font-size: 36px; top: 30%;">
+            Welcome, please upload your csv file.
+        </question>
+        <p class="toggle-text" style="position: absolute; top: 50%; left: 37%">Upload CSV</p>
+        <div style="top: 72%; left: 20%; position: absolute;">
+            <input type="file" name="" id="file" hidden="">
+            <label for="file" id="selector">Select file</label>
+        </div>
+        <div style="top: 84%; left: 47%; position: absolute;">
+            <confirm-button onclick="confirm()">Confirm</confirm-button>
+        </div>
+    </section>
+
+<script src="./AIC_files/file.js.download"></script>
+<script type="text/javascript">
+    function confirm() {
+        window.location.href = "quiz.html";
+    }
+</script></body></html>

@@ -1,0 +1,72 @@
+﻿<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+    <section>
+        <question href="#">
+            Does your costs follow a pattern? Eg. Higher costs during winter, lower costs during summer etc.
+        </question>
+        <div style="top: 35%; left: 30%; position: absolute;" id="costyes">
+            <div class="card" style="left: 15%;" onclick="chooseCostYes()">
+                <div class="card-image" style="background: url('forecast.jpg'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>Yes</h2>
+                    <p>My costs are higher during certain periods of time!</p>
+                </div>
+                <div class="card-stats" style="background: rgb(255, 7, 110);">
+                    <div class="stat">
+                        <div class="value">8321</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">5123</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">95%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="top: 35%; left: 50%; position: absolute;" id="costno">
+            <div class="card" style="left: 15%;" onclick="chooseCostNo()">
+                <div class="card-image" style="background: url('customer.png'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>No</h2>
+                    <p>My costs goes up and down randomly!</p>
+                </div>
+                <div class="card-stats" style=" background: #23D5AB">
+                    <div class="stat">
+                        <div class="value">542</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">154</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">89%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script type="text/javascript">
+    function chooseCostYes() {
+        costno = document.getElementById("costno");
+        costno.parentNode.removeChild(costno);
+        window.location.href = "costyes.html";
+    }
+    function chooseCostNo() {
+        costyes = document.getElementById("costyes");
+        costyes.parentNode.removeChild(costyes);
+        window.location.href = "costno.html";
+    }
+</script>

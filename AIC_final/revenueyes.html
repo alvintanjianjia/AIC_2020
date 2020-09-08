@@ -1,0 +1,94 @@
+﻿<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+    <section>
+        <question href="#">
+            What pattern do you observe? On/Off days, months or years?
+        </question>
+        <div style="top: 35%; left: 20%; position: absolute;" id="revenueday">
+            <div class="card" style="left: 15%;" onclick="chooseRevenueDay()">
+                <div class="card-image" style="background: url('forecast.jpg'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>Days</h2>
+                    <p>My revenues are higher on some days of the week and lower on others!</p>
+                </div>
+                <div class="card-stats" style="background: rgb(255, 7, 110);">
+                    <div class="stat">
+                        <div class="value">8321</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">5123</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">95%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="top: 35%; left: 40%; position: absolute;" id="revenuemonth">
+            <div class="card" style="left: 15%;" onclick="chooseRevenueMonth()">
+                <div class="card-image" style="background: url('customer.png'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>Month</h2>
+                    <p>My revenues are higher on some months and lower on others!</p>
+                </div>
+                <div class="card-stats" style=" background: #23D5AB">
+                    <div class="stat">
+                        <div class="value">542</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">154</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">89%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="top: 35%; left: 60%; position: absolute;" id="revenueyear">
+            <div class="card" style="left: 15%;" onclick="chooseRevenueYear()">
+                <div class="card-image" style="background: url('product.png'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>Year</h2>
+                    <p>My revenues are higher on some years and lower on others!</p>
+                </div>
+                <div class="card-stats" style=" background: #EE7752;">
+                    <div class="stat">
+                        <div class="value">542</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">154</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">89%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script type="text/javascript">
+    function chooseRevenueDay() {
+        window.location.href = "revenueday.html";
+    }
+    function chooseRevenueMonth() {
+        window.location.href = "revenuemonth.html";
+    }
+    function chooseRevenueYear() {
+        window.location.href = "revenueyear.html";
+    }
+</script>

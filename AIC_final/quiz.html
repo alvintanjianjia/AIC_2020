@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+    <section>
+        <question href="#">
+            What would you like us to do today?
+        </question>
+        <div style="top: 35%; left: 20%; position: absolute;" id="forecast">
+            <div class="card" style="left: 15%;" onclick="chooseForecast()">
+                <div class="card-image" style="background: url('forecast.jpg'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>Forecast</h2>
+                    <p>Plan for your company's budget with our accurate predictions of revenue/cost!</p>
+                </div>
+                <div class="card-stats" style="background: rgb(255, 7, 110);">
+                    <div class="stat">
+                        <div class="value">8321</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">5123</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">95%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="top: 35%; left: 40%; position: absolute;" id="customer">
+            <div class="card" style="left: 15%;" onclick="chooseCustomer()">
+                <div class="card-image" style="background: url('customer.png'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>Customers</h2>
+                    <p>Know your customers, from their spending patterns to their spending lifetime!</p>
+                </div>
+                <div class="card-stats" style=" background: #23D5AB">
+                    <div class="stat">
+                        <div class="value">542</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">154</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">89%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="top: 35%; left: 60%; position: absolute;" id="product">
+            <div class="card" style="left: 15%;" onclick="chooseProduct()">
+                <div class="card-image" style="background: url('product.png'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>Products</h2>
+                    <p>Know your products, from their purchase pattern to their purchase lifetime!</p>
+                </div>
+                <div class="card-stats" style=" background: #EE7752;">
+                    <div class="stat">
+                        <div class="value">101</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">23</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">85%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script type="text/javascript">
+    function chooseForecast() {
+        customer = document.getElementById("customer");
+        product = document.getElementById("product");
+        customer.parentNode.removeChild(customer);
+        product.parentNode.removeChild(product);
+        window.location.href = "forecast.html";
+    }
+
+    function chooseCustomer() {
+        forecast = document.getElementById("forecast");
+        product = document.getElementById("product");
+        forecast.parentNode.removeChild(forecast);
+        product.parentNode.removeChild(product);
+        window.location.href = "customer.html";
+    }
+
+    function chooseProduct() {
+        customer = document.getElementById("customer");
+        forecast = document.getElementById("forecast");
+        customer.parentNode.removeChild(customer);
+        forecast.parentNode.removeChild(forecast);
+        window.location.href = "product.html";
+    }
+</script>

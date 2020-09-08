@@ -1,0 +1,72 @@
+﻿<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+    <section>
+        <question href="#">
+            What do you wish to forecast?
+        </question>
+        <div style="top: 35%; left: 30%; position: absolute;" id="revenue">
+            <div class="card" style="left: 15%;" onclick="chooseRevenue()">
+                <div class="card-image" style="background: url('forecast.jpg'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>Revenue</h2>
+                    <p>Plan your budget knowing how much you will be earning!</p>
+                </div>
+                <div class="card-stats" style="background: rgb(255, 7, 110);">
+                    <div class="stat">
+                        <div class="value">8321</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">5123</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">95%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="top: 35%; left: 50%; position: absolute;" id="cost">
+            <div class="card" style="left: 15%;" onclick="chooseCost()">
+                <div class="card-image" style="background: url('customer.png'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>Cost</h2>
+                    <p>Plan your budget knowing your expenses!</p>
+                </div>
+                <div class="card-stats" style=" background: #23D5AB">
+                    <div class="stat">
+                        <div class="value">542</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">154</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">89%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script type="text/javascript">
+    function chooseCost() {
+        revenue = document.getElementById("revenue");
+        revenue.parentNode.removeChild(revenue);
+        window.location.href = "cost.html";
+    }
+    function chooseRevenue() {
+        cost = document.getElementById("cost");
+        cost.parentNode.removeChild(cost);
+        window.location.href = "revenue.html";
+    }
+</script>

@@ -1,0 +1,72 @@
+﻿<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+    <section>
+        <question href="#">
+            Does your revenues follow a pattern? Eg. Higher revenues during winter, lower revenues during summer etc.
+        </question>
+        <div style="top: 35%; left: 30%; position: absolute;" id="revenueyes">
+            <div class="card" style="left: 15%;" onclick="chooseRevenueYes()">
+                <div class="card-image" style="background: url('forecast.jpg'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>Yes</h2>
+                    <p>My revenues are higher during certain periods of time!</p>
+                </div>
+                <div class="card-stats" style="background: rgb(255, 7, 110);">
+                    <div class="stat">
+                        <div class="value">8321</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">5123</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">95%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="top: 35%; left: 50%; position: absolute;" id="revenueno">
+            <div class="card" style="left: 15%;" onclick="chooseRevenueNo()">
+                <div class="card-image" style="background: url('customer.png'); background-size: cover;"></div>
+                <div class="card-text">
+                    <h2>No</h2>
+                    <p>My revenues goes up and down randomly!</p>
+                </div>
+                <div class="card-stats" style=" background: #23D5AB">
+                    <div class="stat">
+                        <div class="value">542</div>
+                        <div class="type">views</div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value">154</div>
+                        <div class="type">reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value">89%</div>
+                        <div class="type">improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script type="text/javascript">
+    function chooseRevenueYes() {
+        revenueno = document.getElementById("revenueno");
+        revenueno.parentNode.removeChild(revenueno);
+        window.location.href = "revenueyes.html";
+    }
+    function chooseRevenueNo() {
+        revenueyes = document.getElementById("revenueyes");
+        revenueyes.parentNode.removeChild(revenueyes);
+        window.location.href = "revenueno.html";
+    }
+</script>

@@ -1,0 +1,61 @@
+﻿<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+    <link rel="stylesheet" href="result.css" />
+</head>
+<body>
+    <section>
+        <result-text> Results </result-text>
+        <div class="center" style="background: url('arima.jpeg'); background-size: cover; width: 40%; height: 42%; transform: translate(-100%, -50%)"></div>
+        <div class="center" style="width: 40%; height: 40%; transform: translate(10%, -50%);">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Months from M0</th>
+                        <th>Revenue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>307.5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>301.8</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>316.9</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>321.9</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>359.5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>371.2</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>410.7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="top: 84%; left: 50%; position: absolute;">
+            <back-button onclick="back()">Generate Report</back-button>
+        </div>
+    </section>
+</body>
+<script>
+    function back() {
+        window.location.href = "quiz.html";
+    }
+</script>

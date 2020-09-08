@@ -1,0 +1,65 @@
+﻿<head>
+    <meta charset="UTF-8" />
+    <title>AIC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz.css" />
+    <link rel="stylesheet" href="result.css" />
+</head>
+<body>
+    <section>
+        <result-text> Results </result-text>
+        <div class="center" style="background: url('customerHabits.jpeg'); background-size: cover; width: 30%; height: 48%; transform: translate(-100%, -50%)"></div>
+        <div class="center" style="width: 40%; height: 40%; transform: translate(10%, -50%);">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer Group</th>
+                        <th>Avg amt per visit</th>
+                        <th>Number of visits per mth</th>
+                        <th>Avg amt per mth</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>267.17</td>
+                        <td>1.12</td>
+                        <td>288.339</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>564.63</td>
+                        <td>2.04</td>
+                        <td>927.49</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>1113.87</td>
+                        <td>3.22</td>
+                        <td>2367.99</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2514.79</td>
+                        <td>4.04</td>
+                        <td>6696.62</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>4997.54</td>
+                        <td>5.4</td>
+                        <td>11233</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="top: 84%; left: 50%; position: absolute;">
+            <back-button onclick="back()">Generate Report</back-button>
+        </div>
+    </section>
+</body>
+<script>
+    function back() {
+        window.location.href = "quiz.html";
+    }
+</script>
